@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Dancing+Script:wght@700&family=Josefin+Sans:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-script: "Dancing Script", cursive;
+  --font-buongiorno: "Buongiorno Rastellino", cursive;
+  --font-josefin: "Josefin Sans", sans-serif;
+  
+  --color-primary-green: #14532D; /* Dark green for header/cta */
+  --color-accent-green: #166534; /* Slightly lighter green */
+  --color-footer-dark: #0A192F; /* Deep navy from the image */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-slate-900 antialiased;
+    image-rendering: -webkit-optimize-contrast;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}

@@ -1,21 +1,25 @@
 import { motion } from 'motion/react';
 import { Bot, Gauge, Globe, ArrowUpRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const services = [
   {
     title: 'Industrial Automation',
     description: 'Tailored automation systems to enhance productivity and precision in manufacturing lines.',
     icon: <Bot className="w-8 h-8 text-primary-green" />,
+    link: '/products/automation',
   },
   {
     title: 'Process Control',
     description: 'Robust control solutions for managing complex processes and ensuring consistent quality.',
     icon: <Gauge className="w-8 h-8 text-primary-green" />,
+    link: '#',
   },
   {
     title: 'IoT',
     description: 'Connecting devices and systems for real-time data insights and smarter decision-making.',
     icon: <Globe className="w-8 h-8 text-primary-green" />,
+    link: '/products/iot',
   },
 ];
 
@@ -53,13 +57,13 @@ export default function Services() {
               <p className="text-slate-600 mb-6 leading-relaxed">
                 {service.description}
               </p>
-              <a
-                href="#"
+              <Link
+                to={service.link}
                 className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary-green hover:gap-2 transition-all"
               >
                 Learn More
                 <ArrowUpRight className="w-4 h-4" />
-              </a>
+              </Link>
             </motion.div>
           ))}
         </div>

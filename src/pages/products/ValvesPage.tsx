@@ -162,7 +162,7 @@ export default function ValvesPage() {
 
                   <motion.button
                     whileHover={{ x: 5 }}
-                    className="flex items-center gap-2 text-emerald-600 font-bold text-xs uppercase tracking-widest group/btn"
+                    className="hidden items-center gap-2 text-emerald-600 font-bold text-xs uppercase tracking-widest group/btn"
                   >
                     View Technical Datasheet
                     <ChevronRight className="w-4 h-4" />

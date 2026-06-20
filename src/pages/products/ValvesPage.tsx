@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Droplets, Activity, ChevronRight, Settings2, Wind, Layers } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import ProductSubNav from '../../components/layout/ProductSubNav';
 
 export default function ValvesPage() {
@@ -86,6 +87,13 @@ export default function ValvesPage() {
 
   return (
     <div className="bg-white min-h-screen">
+      <Helmet>
+        <title>Control Valves & Actuators | The Automation People</title>
+        <meta name="description" content="High-performance industrial control valves, actuators, and flow control systems. Built for precise regulation of liquids, steam, and gases." />
+        <meta property="og:title" content="Control Valves & Actuators | The Automation People" />
+        <meta property="og:description" content="High-performance industrial control valves, actuators, and flow control systems. Built for precise regulation of liquids, steam, and gases." />
+        <link rel="canonical" href="https://theautomationpeople.in/products/valves" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center pt-48 pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">

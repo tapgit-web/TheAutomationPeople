@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Cpu, Layout, ChevronRight, Zap, Settings, PanelsTopLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import ProductSubNav from '../../components/layout/ProductSubNav';
 
 export default function AutomationProductsPage() {
@@ -39,6 +40,13 @@ export default function AutomationProductsPage() {
 
   return (
     <div className="bg-white min-h-screen">
+      <Helmet>
+        <title>PLC, SCADA & Automation Products | The Automation People</title>
+        <meta name="description" content="Get top-tier PLCs, HMIs, VFDs, and smart control panels. Standard and custom automation hardware designed for seamless industrial integration." />
+        <meta property="og:title" content="PLC, SCADA & Automation Products | The Automation People" />
+        <meta property="og:description" content="Get top-tier PLCs, HMIs, VFDs, and smart control panels. Standard and custom automation hardware designed for seamless industrial integration." />
+        <link rel="canonical" href="https://theautomationpeople.in/products/automation" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center pt-48 pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">

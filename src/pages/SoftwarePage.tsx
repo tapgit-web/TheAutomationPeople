@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Monitor, Code, Cloud, Database, ChevronRight, CheckCircle2 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 export default function SoftwarePage() {
   const navigate = useNavigate();
@@ -47,6 +48,13 @@ export default function SoftwarePage() {
 
   return (
     <div className="bg-white min-h-screen">
+      <Helmet>
+        <title>Industrial Software & SCADA Solutions | The Automation People</title>
+        <meta name="description" content="Optimize your production with our advanced industrial software, PLC programming, custom SCADA/HMI dashboards, and real-time data monitoring solutions." />
+        <meta property="og:title" content="Industrial Software & SCADA Solutions | The Automation People" />
+        <meta property="og:description" content="Optimize your production with our advanced industrial software, PLC programming, custom SCADA/HMI dashboards, and real-time data monitoring solutions." />
+        <link rel="canonical" href="https://theautomationpeople.in/software" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center pt-32 pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">

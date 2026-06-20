@@ -38,15 +38,16 @@ export default function App() {
       <div className="min-h-screen bg-white">
         <Helmet>
           <title>The Automation People | Smart Industrial Solutions</title>
-          <meta name="description" content="The Automation People provides advanced industrial automation, process control, and IoT solutions to optimize your manufacturing and business operations." />
-          <meta name="keywords" content="Industrial Automation, Process Control, IoT, Manufacturing efficiency, Madurai, Automation experts" />
+          <meta name="description" content="The Automation People provides advanced industrial automation, process control, valves, sensors, and IoT solutions to optimize your manufacturing and business operations." />
+          <meta name="keywords" content="Industrial Automation, Process Control, IoT, Manufacturing efficiency, Valves, Sensors, Flow Instruments, Analytical Instruments, SCADA, PLC, Smart Control Solutions, Madurai, Automation experts" />
           <meta property="og:title" content="The Automation People | Smart Industrial Solutions" />
           <meta property="og:description" content="Optimizing industrial operations with smart automation and IoT solutions." />
           <meta property="og:type" content="website" />
+          <link rel="canonical" href="https://theautomationpeople.in/" />
         </Helmet>
 
         <Header />
-        
+
         <main>
           <Suspense fallback={
             <div className="min-h-screen flex items-center justify-center bg-slate-50">

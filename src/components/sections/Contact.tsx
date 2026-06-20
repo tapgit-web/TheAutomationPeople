@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -25,6 +26,13 @@ const itemVariants = {
 export default function Contact() {
   return (
     <section id="contact" className="relative pt-48 pb-32 bg-slate-50 overflow-hidden min-h-screen flex flex-col justify-center">
+      <Helmet>
+        <title>Contact Us | Get in Touch - The Automation People</title>
+        <meta name="description" content="Have questions about our industrial automation, SCADA software, or IoT solutions? Contact The Automation People's engineering team in Madurai today." />
+        <meta property="og:title" content="Contact Us | Get in Touch - The Automation People" />
+        <meta property="og:description" content="Have questions about our industrial automation, SCADA software, or IoT solutions? Contact The Automation People's engineering team in Madurai today." />
+        <link rel="canonical" href="https://theautomationpeople.in/contact" />
+      </Helmet>
       {/* Enhanced Technical Background */}
       <div className="absolute inset-0 pointer-events-none select-none overflow-hidden" aria-hidden="true">
         {/* Grid Layer */}

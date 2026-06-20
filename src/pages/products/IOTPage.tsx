@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Network, Globe, ChevronRight, Database, ShieldCheck, Share2 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import ProductSubNav from '../../components/layout/ProductSubNav';
 
 export default function IOTPage() {
@@ -22,6 +23,13 @@ export default function IOTPage() {
 
   return (
     <div className="bg-white min-h-screen">
+      <Helmet>
+        <title>Industrial IoT (IIoT) & Smart Gateway Solutions | The Automation People</title>
+        <meta name="description" content="Connect your machinery to the cloud with our Industrial IoT (IIoT) gateways, remote monitoring systems, and edge data collection solutions." />
+        <meta property="og:title" content="Industrial IoT (IIoT) & Smart Gateway Solutions | The Automation People" />
+        <meta property="og:description" content="Connect your machinery to the cloud with our Industrial IoT (IIoT) gateways, remote monitoring systems, and edge data collection solutions." />
+        <link rel="canonical" href="https://theautomationpeople.in/products/iot" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center pt-48 pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">

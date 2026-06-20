@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Cpu, Zap, Globe, ChevronRight, CircuitBoard, Terminal, Gauge, Activity, Network, Box } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 export default function AboutPage() {
   const navigate = useNavigate();
@@ -45,6 +46,13 @@ export default function AboutPage() {
 
   return (
     <div className="bg-white min-h-screen">
+      <Helmet>
+        <title>About Us | Industrial Automation Experts - The Automation People</title>
+        <meta name="description" content="Learn about The Automation People, our mission, precision engineering expertise, and our range of custom PCB designs, PLC systems, and smart IoT solutions." />
+        <meta property="og:title" content="About Us | Industrial Automation Experts - The Automation People" />
+        <meta property="og:description" content="Learn about The Automation People, our mission, precision engineering expertise, and our range of custom PCB designs, PLC systems, and smart IoT solutions." />
+        <link rel="canonical" href="https://theautomationpeople.in/about" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center pt-48 pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">

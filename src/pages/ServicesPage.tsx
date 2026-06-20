@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from 'motion/react';
 import { Bot, Gauge, Globe, Cpu, Zap, Activity, ChevronRight, Binary, Factory, ShieldCheck, Cog } from 'lucide-react';
 import { useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const detailedServices = [
   {
@@ -70,9 +71,16 @@ export default function ServicesPage() {
 
   return (
     <div className="bg-white min-h-screen text-slate-900 selection:bg-emerald-500 selection:text-white" ref={containerRef}>
+      <Helmet>
+        <title>Industrial Automation & Engineering Services | The Automation People</title>
+        <meta name="description" content="Discover our engineering services, including PLC programming, control panel fabrication, SCADA systems, custom PCB design, and smart industrial IoT integrations." />
+        <meta property="og:title" content="Industrial Automation & Engineering Services | The Automation People" />
+        <meta property="og:description" content="Discover our engineering services, including PLC programming, control panel fabrication, SCADA systems, custom PCB design, and smart industrial IoT integrations." />
+        <link rel="canonical" href="https://theautomationpeople.in/services" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 overflow-hidden border-b border-slate-200">
-        <motion.div 
+        <motion.div
           style={{ y: backgroundY }}
           className="absolute inset-0 z-0 opacity-20"
         >
@@ -102,7 +110,7 @@ export default function ServicesPage() {
         </div>
 
         {/* Decorative elements */}
-        <motion.div 
+        <motion.div
           animate={{ rotate: 360 }}
           transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
           className="absolute -right-20 -top-20 opacity-10 pointer-events-none"
@@ -128,17 +136,17 @@ export default function ServicesPage() {
                 <div className="absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-10 transition-opacity duration-300 rounded-3xl blur-2xl -z-10"
                   style={{ backgroundImage: `linear-gradient(to bottom right, var(--tw-gradient-from), var(--tw-gradient-to))` }}
                 ></div>
-                
+
                 <div className="h-full bg-white shadow-2xl p-8 rounded-[2.5rem] border border-slate-200 transition-all duration-300 group-hover:border-emerald-500/50 flex flex-col">
                   <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${service.color} flex items-center justify-center text-white mb-8 shadow-lg shadow-emerald-950/20`}>
                     {service.icon}
                   </div>
-                  
+
                   <h3 className="text-2xl font-bold mb-4 flex items-center gap-2 group-hover:text-emerald-600 transition-colors">
                     {service.title}
                     <ChevronRight className="w-5 h-5 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
                   </h3>
-                  
+
                   <p className="text-slate-600 leading-relaxed mb-8">
                     {service.longDesc}
                   </p>
@@ -163,7 +171,7 @@ export default function ServicesPage() {
       {/* CTA Section */}
       <section className="py-24 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4">
-          <motion.div 
+          <motion.div
             whileInView={{ scale: [0.95, 1], opacity: [0, 1] }}
             className="bg-gradient-to-r from-emerald-600 to-teal-700 rounded-[4rem] p-12 md:p-24 text-center relative overflow-hidden"
           >
@@ -175,7 +183,7 @@ export default function ServicesPage() {
             <p className="text-xl md:text-2xl text-emerald-50 max-w-2xl mx-auto mb-12 relative z-10 opacity-90">
               Schedule a technical consultation with our engineering team today and start your journey towards Industry 4.0.
             </p>
-            <motion.button 
+            <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-white text-emerald-900 px-12 py-5 rounded-full font-black text-lg shadow-2xl hover:shadow-emerald-900/40 transition-all uppercase tracking-widest"
@@ -189,7 +197,7 @@ export default function ServicesPage() {
       {/* Stats/Badge Banner */}
       <div className="border-t border-slate-200 bg-white py-12">
         <div className="max-w-7xl mx-auto px-4 flex flex-wrap justify-center md:justify-between items-center gap-8 opacity-40 text-slate-600">
-          <div className="flex items-center gap-2"><Factory className="w-5 h-5" /> <span>IS0 9001 CERTIFIED</span></div>
+          {/* <div className="flex items-center gap-2"><Factory className="w-5 h-5" /> <span>IS0 9001 CERTIFIED</span></div> */}
           <div className="flex items-center gap-2"><ShieldCheck className="w-5 h-5" /> <span>INDUSTRY COMPLIANT</span></div>
           <div className="flex items-center gap-2 text-emerald-500"><Binary className="w-5 h-5" /> <span>CUSTOM LOGIC EXPERTS</span></div>
         </div>

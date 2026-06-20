@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Gauge, Thermometer, ChevronRight, Activity, Zap, Compass } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import ProductSubNav from '../../components/layout/ProductSubNav';
 
 export default function InstrumentsPage() {
@@ -106,6 +107,13 @@ export default function InstrumentsPage() {
 
   return (
     <div className="bg-white min-h-screen">
+      <Helmet>
+        <title>Process Instruments & Gauges | The Automation People</title>
+        <meta name="description" content="Explore our range of flow meters, pressure transmitters, level indicators, and analytical instruments for precise process manufacturing control." />
+        <meta property="og:title" content="Process Instruments & Gauges | The Automation People" />
+        <meta property="og:description" content="Explore our range of flow meters, pressure transmitters, level indicators, and analytical instruments for precise process manufacturing control." />
+        <link rel="canonical" href="https://theautomationpeople.in/products/instruments" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center pt-48 pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">

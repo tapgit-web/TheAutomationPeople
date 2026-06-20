@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Target, Zap, ChevronRight, Search, Eye, Radio, ShieldCheck, Box } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import ProductSubNav from '../../components/layout/ProductSubNav';
 
 export default function SensorsPage() {
@@ -47,6 +48,13 @@ export default function SensorsPage() {
 
   return (
     <div className="bg-white min-h-screen">
+      <Helmet>
+        <title>Industrial Sensors & Transmitters | The Automation People</title>
+        <meta name="description" content="Browse our high-accuracy sensors and transmitters for temperature, pressure, level, and proximity control. Engineered for reliability in tough conditions." />
+        <meta property="og:title" content="Industrial Sensors & Transmitters | The Automation People" />
+        <meta property="og:description" content="Browse our high-accuracy sensors and transmitters for temperature, pressure, level, and proximity control. Engineered for reliability in tough conditions." />
+        <link rel="canonical" href="https://theautomationpeople.in/products/sensors" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center pt-48 pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">

@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Monitor, Code, Cloud, Database, ChevronRight, CheckCircle2 } from 'lucide-react';
+import { Monitor, Code, Cloud, Database, ChevronRight, CheckCircle2, ExternalLink } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
@@ -118,8 +118,91 @@ export default function SoftwarePage() {
         </div>
       </section>
 
+      {/* Featured Web Application */}
+      <section className="py-24 bg-slate-900 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="inline-block py-1.5 px-3 rounded bg-emerald-500/20 text-emerald-400 text-[10px] font-bold uppercase tracking-[0.2em] mb-4 border border-emerald-500/30">
+              Live Demo
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">NetZero Solution</h2>
+            <p className="text-slate-400 max-w-2xl mx-auto text-lg mb-8">
+              Experience the performance and design of our customized web platforms firsthand.
+            </p>
+            <div className="max-w-3xl mx-auto flex flex-col gap-6 mb-12">
+              <div className="bg-slate-800/80 p-5 md:p-8 rounded-2xl border border-slate-700 shadow-2xl backdrop-blur-sm relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 relative z-10">
+                  
+                  <div className="text-left flex-1 w-full">
+                    <div className="text-xs font-bold text-emerald-400 uppercase tracking-[0.2em] mb-4">Demo Credentials</div>
+                    <div className="space-y-3">
+                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-6 bg-slate-900/80 p-4 rounded-xl border border-slate-700/50">
+                        <span className="text-slate-400 text-sm font-medium shrink-0 uppercase tracking-wider text-[10px]">Admin Access</span>
+                        <div className="font-mono text-emerald-100 text-sm sm:text-right break-all sm:break-normal">
+                          <span className="text-slate-300">admin@tapgreen.com</span>
+                          <span className="mx-2 text-emerald-500/50 hidden sm:inline">|</span>
+                          <span className="block sm:inline text-emerald-300 font-bold mt-1 sm:mt-0">admin</span>
+                        </div>
+                      </div>
+                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 sm:gap-6 bg-slate-900/80 p-4 rounded-xl border border-slate-700/50">
+                        <span className="text-slate-400 text-sm font-medium shrink-0 uppercase tracking-wider text-[10px]">Manager Access</span>
+                        <div className="font-mono text-emerald-100 text-sm sm:text-right break-all sm:break-normal">
+                          <span className="text-slate-300">manager1@tapgreen.com</span>
+                          <span className="mx-2 text-emerald-500/50 hidden sm:inline">|</span>
+                          <span className="block sm:inline text-emerald-300 font-bold mt-1 sm:mt-0">site1</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex shrink-0 w-full lg:w-auto justify-center mt-2 lg:mt-0">
+                    <a 
+                      href="https://tapgreen.vercel.app/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="w-full lg:w-auto inline-flex items-center justify-center gap-3 bg-emerald-500 hover:bg-emerald-400 text-white px-8 py-5 rounded-xl font-bold transition-all shadow-xl shadow-emerald-500/20 group hover:-translate-y-1"
+                    >
+                      <span>Open Live App</span>
+                      <ExternalLink className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="rounded-2xl overflow-hidden shadow-2xl border border-slate-700 bg-slate-800 h-[60vh] md:h-[80vh] min-h-[400px] md:min-h-[600px] max-h-[900px] w-full relative ring-4 ring-slate-800/50"
+          >
+             {/* Browser Chrome */}
+             <div className="h-10 md:h-12 bg-[#1e293b] border-b border-slate-800 flex items-center px-3 md:px-4 justify-between gap-2">
+               <div className="flex items-center gap-1.5 md:gap-2 w-12 md:w-20 shrink-0">
+                 <div className="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-red-500/80"></div>
+                 <div className="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-yellow-500/80"></div>
+                 <div className="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-emerald-500/80"></div>
+               </div>
+               <div className="flex-1 max-w-sm mx-auto bg-slate-900/50 rounded text-[10px] md:text-xs px-2 md:px-4 py-1 md:py-1.5 text-slate-400 flex items-center justify-center gap-1.5 md:gap-2 border border-slate-700/50 truncate">
+                 <Monitor className="w-2.5 h-2.5 md:w-3 md:h-3 shrink-0" /> tapgreen.vercel.app
+               </div>
+               <div className="w-12 md:w-20 shrink-0"></div>
+             </div>
+             <iframe 
+               src="https://tapgreen.vercel.app/" 
+               className="w-full h-[calc(100%-40px)] md:h-[calc(100%-48px)] border-none bg-slate-50"
+               title="TAP Green Interactive Demo"
+               loading="lazy"
+             />
+          </motion.div>
+        </div>
+      </section>
+
       {/* Features & Call to Action */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-slate-50 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div

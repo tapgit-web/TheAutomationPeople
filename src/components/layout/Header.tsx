@@ -9,6 +9,7 @@ const productLinks = [
   { name: 'Automation Products', href: '/products/automation' },
   { name: 'Instruments', href: '/products/instruments' },
   { name: 'IOT', href: '/products/iot' },
+  { name: 'Customized Machine', href: '/products/customized-machine' },
 ];
 
 const navLinks = [

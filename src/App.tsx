@@ -22,6 +22,7 @@ const ValvesPage = lazy(() => import('./pages/products/ValvesPage'));
 const AutomationProductsPage = lazy(() => import('./pages/products/AutomationProductsPage'));
 const InstrumentsPage = lazy(() => import('./pages/products/InstrumentsPage'));
 const IOTPage = lazy(() => import('./pages/products/IOTPage'));
+const CustomizedMachinePage = lazy(() => import('./pages/products/CustomizedMachinePage'));
 
 const HomePage = () => (
   <>
@@ -64,6 +65,7 @@ export default function App() {
               <Route path="/products/automation" element={<AutomationProductsPage />} />
               <Route path="/products/instruments" element={<InstrumentsPage />} />
               <Route path="/products/iot" element={<IOTPage />} />
+              <Route path="/products/customized-machine" element={<CustomizedMachinePage />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </Suspense>

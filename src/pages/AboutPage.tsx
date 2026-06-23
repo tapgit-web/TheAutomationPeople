@@ -42,6 +42,13 @@ export default function AboutPage() {
       color: 'bg-amber-600',
       shadow: 'shadow-amber-900/40'
     },
+    {
+      title: 'Customized Machines',
+      desc: 'Bespoke manufacturing and assembly equipment designed for your unique operational requirements.',
+      icon: <Box className="w-6 h-6 text-white" />,
+      color: 'bg-rose-600',
+      shadow: 'shadow-rose-900/40'
+    },
   ];
 
   return (

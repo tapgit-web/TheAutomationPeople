@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Bot, Gauge, Globe, ArrowUpRight } from 'lucide-react';
+import { Bot, Gauge, Globe, ArrowUpRight, Settings } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const services = [
@@ -21,6 +21,12 @@ const services = [
     icon: <Globe className="w-8 h-8 text-primary-green" />,
     link: '/products/iot',
   },
+  {
+    title: 'Customized Machine',
+    description: 'Bespoke manufacturing and assembly equipment designed for your unique operational requirements.',
+    icon: <Settings className="w-8 h-8 text-primary-green" />,
+    link: '/products/customized-machine',
+  },
 ];
 
 export default function Services() {
@@ -38,8 +44,8 @@ export default function Services() {
           </motion.h2>
           <div className="w-20 h-1.5 bg-primary-green mx-auto rounded-full"></div>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={service.title}

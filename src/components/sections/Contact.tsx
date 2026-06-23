@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { motion } from 'motion/react';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
@@ -15,15 +16,17 @@ const containerVariants = {
 
 const itemVariants = {
   hidden: { opacity: 0, x: -30, filter: 'blur(10px)' },
-  visible: { 
-    opacity: 1, 
-    x: 0, 
+  visible: {
+    opacity: 1,
+    x: 0,
     filter: 'blur(0px)',
     transition: { type: 'spring', stiffness: 100, damping: 15 }
   }
 };
 
 export default function Contact() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
   return (
     <section id="contact" className="relative pt-48 pb-32 bg-slate-50 overflow-hidden min-h-screen flex flex-col justify-center">
       <Helmet>
@@ -36,14 +39,14 @@ export default function Contact() {
       {/* Enhanced Technical Background */}
       <div className="absolute inset-0 pointer-events-none select-none overflow-hidden" aria-hidden="true">
         {/* Grid Layer */}
-        <div 
-          className="absolute inset-0 opacity-[0.07]" 
-          style={{ 
+        <div
+          className="absolute inset-0 opacity-[0.07]"
+          style={{
             backgroundImage: `linear-gradient(#059669 1px, transparent 1px), linear-gradient(90deg, #059669 1px, transparent 1px)`,
-            backgroundSize: '50px 50px' 
+            backgroundSize: '50px 50px'
           }}
         ></div>
-        
+
         {/* Large Decorative Text (Matches Hero Aesthetic) */}
         <div className="absolute top-[5%] left-0 right-0 flex justify-center opacity-[0.05] pointer-events-none select-none w-full" aria-hidden="true">
           <div className="text-emerald-900 text-[25vw] md:text-[20vw] font-black leading-none tracking-tighter">
@@ -55,13 +58,13 @@ export default function Contact() {
         <svg className="absolute inset-0 w-full h-full opacity-[0.1]" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <defs>
             <filter id="glow">
-              <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+              <feGaussianBlur stdDeviation="2" result="coloredBlur" />
               <feMerge>
-                <feMergeNode in="coloredBlur"/>
-                <feMergeNode in="SourceGraphic"/>
+                <feMergeNode in="coloredBlur" />
+                <feMergeNode in="SourceGraphic" />
               </feMerge>
             </filter>
-            
+
             <marker id="node" markerWidth="8" markerHeight="8" refX="4" refY="4">
               <circle cx="4" cy="4" r="2.5" fill="#059669" />
             </marker>
@@ -91,7 +94,7 @@ export default function Contact() {
               repeat: Infinity,
               ease: "linear"
             }}
-            style={{ 
+            style={{
               offsetPath: "path('M-100,200 L200,200 L240,240 L400,240')",
               willChange: 'transform, opacity'
             }}
@@ -110,7 +113,7 @@ export default function Contact() {
               delay: 3,
               ease: "linear"
             }}
-            style={{ 
+            style={{
               offsetPath: "path('M1600,300 L1300,300 L1260,340 L1100,340')",
               willChange: 'transform, opacity'
             }}
@@ -135,79 +138,149 @@ export default function Contact() {
         </div>
 
         <div className="grid grid-cols-1 gap-12">
-          {/* Contact Cards */}
-          <div className="relative max-w-4xl mx-auto w-full">
-            {/* Decorative Connection Lines for the Card */}
-            <div className="absolute -left-12 top-1/2 -translate-y-1/2 hidden xl:block" aria-hidden="true">
-              <svg width="100" height="200" viewBox="0 0 100 200" fill="none" className="text-emerald-500/20">
-                <path d="M100,50 L50,50 L30,70 L0,70" stroke="currentColor" strokeWidth="2" />
-                <path d="M100,100 L0,100" stroke="currentColor" strokeWidth="2" />
-                <path d="M100,150 L50,150 L30,130 L0,130" stroke="currentColor" strokeWidth="2" />
-                <circle cx="5" cy="70" r="3" fill="currentColor" />
-                <circle cx="5" cy="100" r="3" fill="currentColor" />
-                <circle cx="5" cy="130" r="3" fill="currentColor" />
-              </svg>
-            </div>
+          {/* Contact Layout */}
+          <div className="relative max-w-6xl mx-auto w-full">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+              {/* Left Column: Contact Details */}
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "50px" }}
+                className="bg-white p-8 sm:p-12 rounded-[2.5rem] shadow-2xl shadow-green-900/10 border border-green-100 relative z-10"
+              >
+                <div className="space-y-16">
+                  {/* Head Office Section */}
+                  <div>
+                    <div className="flex items-center gap-4 mb-10">
+                      <h2 className="text-2xl font-bold text-slate-800 tracking-tight uppercase">Head Office</h2>
+                      <div className="h-px flex-1 bg-slate-100" />
+                    </div>
 
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true, margin: "50px" }}
-              className="bg-white p-8 sm:p-12 rounded-[2.5rem] shadow-2xl shadow-green-900/10 border border-green-100 relative z-10"
-            >
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-                {/* Head Office Section */}
-                <div>
-                  <div className="flex items-center gap-4 mb-10">
-                    <h2 className="text-2xl font-bold text-slate-800 tracking-tight uppercase">Head Office</h2>
-                    <div className="h-px flex-1 bg-slate-100" />
+                    <div className="space-y-8">
+                      <div className="flex items-start gap-6 group">
+                        <div className="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary-green group-hover:text-white transition-all duration-300">
+                          <MapPin className="w-6 h-6 text-primary-green group-hover:text-white" />
+                        </div>
+                        <p className="text-slate-600 leading-relaxed font-medium">No.9A Sekkadi Street, Narimedu,<br />Madurai, TamilNadu 625002</p>
+                      </div>
+
+                      <div className="flex items-center gap-6 group">
+                        <div className="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary-green group-hover:text-white transition-all duration-300">
+                          <Phone className="w-6 h-6 text-primary-green group-hover:text-white" />
+                        </div>
+                        <a href="tel:+919944042138" className="text-lg font-bold text-slate-800 hover:text-primary-green transition-colors">+91 9944042138</a>
+                      </div>
+
+                      <div className="flex items-center gap-6 group">
+                        <div className="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary-green group-hover:text-white transition-all duration-300">
+                          <Mail className="w-6 h-6 text-primary-green group-hover:text-white" />
+                        </div>
+                        <a href="mailto:reachus@theautomationpeople.in" className="text-sm sm:text-base lg:text-lg font-bold text-slate-800 hover:text-primary-green transition-colors whitespace-nowrap">
+                          reachus@theautomationpeople.in
+                        </a>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div className="space-y-8">
+
+                  {/* Factory Location Section */}
+                  <div>
+                    <div className="flex items-center gap-4 mb-10">
+                      <h2 className="text-2xl font-bold text-slate-800 tracking-tight uppercase">Factory</h2>
+                      <div className="h-px flex-1 bg-slate-100" />
+                    </div>
+
                     <div className="flex items-start gap-6 group">
                       <div className="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary-green group-hover:text-white transition-all duration-300">
                         <MapPin className="w-6 h-6 text-primary-green group-hover:text-white" />
                       </div>
-                      <p className="text-slate-600 leading-relaxed font-medium">No.9A Sekkadi Street, Narimedu,<br />Madurai, TamilNadu 625002</p>
-                    </div>
-                    
-                    <div className="flex items-center gap-6 group">
-                      <div className="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary-green group-hover:text-white transition-all duration-300">
-                        <Phone className="w-6 h-6 text-primary-green group-hover:text-white" />
+                      <div>
+                        <p className="text-slate-600 leading-relaxed font-medium">No 31/1 Ahimsapuram 5th Street Extension,<br />Near Gopuram Theater, Sellur,<br />Madurai - 625002</p>
                       </div>
-                      <a href="tel:+919944042138" className="text-lg font-bold text-slate-800 hover:text-primary-green transition-colors">+91 9944042138</a>
-                    </div>
-                    
-                    <div className="flex items-center gap-6 group">
-                      <div className="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary-green group-hover:text-white transition-all duration-300">
-                        <Mail className="w-6 h-6 text-primary-green group-hover:text-white" />
-                      </div>
-                      <a href="mailto:reachus@theautomationpeople.in" className="text-sm sm:text-base lg:text-lg font-bold text-slate-800 hover:text-primary-green transition-colors whitespace-nowrap">
-                        reachus@theautomationpeople.in
-                      </a>
                     </div>
                   </div>
+                </div>
+              </motion.div>
+
+              {/* Right Column: Contact Form */}
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "50px" }}
+                className="bg-white p-8 sm:p-12 rounded-[2.5rem] shadow-2xl shadow-green-900/10 border border-green-100 relative z-10 flex flex-col"
+              >
+                <div className="flex items-center gap-4 mb-10">
+                  <h2 className="text-2xl font-bold text-slate-800 tracking-tight uppercase">Send a Message</h2>
+                  <div className="h-px flex-1 bg-slate-100" />
                 </div>
 
-                {/* Factory Location Section */}
-                <div>
-                  <div className="flex items-center gap-4 mb-10">
-                    <h2 className="text-2xl font-bold text-slate-800 tracking-tight uppercase">Factory</h2>
-                    <div className="h-px flex-1 bg-slate-100" />
-                  </div>
-                  
-                  <div className="flex items-start gap-6 group">
-                    <div className="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary-green group-hover:text-white transition-all duration-300">
-                      <MapPin className="w-6 h-6 text-primary-green group-hover:text-white" />
+                <iframe name="hidden_iframe" id="hidden_iframe" style={{ display: 'none' }}></iframe>
+                {isSubmitted ? (
+                  <div className="flex-1 flex flex-col items-center justify-center space-y-4 text-center py-12">
+                    <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mb-4">
+                      <svg className="w-8 h-8 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
                     </div>
-                    <div>
-                      <p className="text-lg font-bold text-slate-800">Sellur Madurai</p>
-                      <p className="text-slate-500 font-medium">Tamil Nadu, India</p>
-                    </div>
+                    <h3 className="text-2xl font-bold text-slate-800">Thank You!</h3>
+                    <p className="text-slate-600">Your message has been sent successfully. We will get back to you soon.</p>
+                    <button
+                      onClick={() => setIsSubmitted(false)}
+                      className="mt-6 text-primary-green font-semibold hover:underline"
+                    >
+                      Send another message
+                    </button>
                   </div>
-                </div>
-              </div>
-            </motion.div>
+                ) : (
+                  <form
+                    action="https://docs.google.com/forms/d/e/1FAIpQLScknoIErqEz0TwnCMbhvzyh6ME9E7SX0LPCCvq6scNjgnHM4Q/formResponse"
+                    method="post"
+                    target="hidden_iframe"
+                    className="space-y-6 flex-1 flex flex-col justify-between"
+                    onSubmit={() => {
+                      setTimeout(() => setIsSubmitted(true), 500);
+                    }}
+                  >
+                    <div className="space-y-6">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div className="space-y-2">
+                          <label htmlFor="name" className="text-sm font-semibold text-slate-700">Full Name</label>
+                          <input type="text" name="entry.1165663985" id="name" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-primary-green focus:border-primary-green transition-all outline-none" placeholder="John Doe" required />
+                        </div>
+                        <div className="space-y-2">
+                          <label htmlFor="company" className="text-sm font-semibold text-slate-700">Company Name</label>
+                          <input type="text" name="entry.1659873230" id="company" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-primary-green focus:border-primary-green transition-all outline-none" placeholder="Acme Corp" required />
+                        </div>
+                      </div>
+
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div className="space-y-2">
+                          <label htmlFor="designation" className="text-sm font-semibold text-slate-700">Designation</label>
+                          <input type="text" name="entry.1229887326" id="designation" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-primary-green focus:border-primary-green transition-all outline-none" placeholder="Manager" />
+                        </div>
+                        <div className="space-y-2">
+                          <label htmlFor="phone" className="text-sm font-semibold text-slate-700">Phone Number</label>
+                          <input type="tel" name="entry.1287555262" id="phone" pattern="[0-9]{10}" minLength={10} maxLength={10} title="Please enter exactly 10 digits" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-primary-green focus:border-primary-green transition-all outline-none" placeholder="9876543210" required />
+                        </div>
+                      </div>
+
+                      <div className="space-y-2">
+                        <label htmlFor="email" className="text-sm font-semibold text-slate-700">Email Address</label>
+                        <input type="email" name="entry.192625699" id="email" className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-primary-green focus:border-primary-green transition-all outline-none" placeholder="john@example.com" required />
+                      </div>
+
+                      <div className="space-y-2">
+                        <label htmlFor="requirements" className="text-sm font-semibold text-slate-700">Requirements</label>
+                        <textarea name="entry.909921449" id="requirements" rows={4} className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-primary-green focus:border-primary-green transition-all outline-none resize-none" placeholder="Tell us about your project requirements..." required></textarea>
+                      </div>
+                    </div>
+
+                    <button type="submit" className="w-full py-4 bg-primary-green hover:bg-emerald-700 text-white font-bold rounded-xl shadow-lg shadow-emerald-600/30 transition-all active:scale-[0.98] mt-6">
+                      Submit Requirements
+                    </button>
+                  </form>
+                )}
+              </motion.div>
+            </div>
           </div>
         </div>
       </div>

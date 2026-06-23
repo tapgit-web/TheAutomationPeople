@@ -31,7 +31,7 @@ export default function IOTPage() {
         <link rel="canonical" href="https://theautomationpeople.in/products/iot" />
       </Helmet>
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center pt-48 pb-16 overflow-hidden">
+      <section className="relative min-h-[35vh] md:min-h-[50vh] flex items-center pt-32 md:pt-48 pb-12 md:pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="/images/circuit_background.png" 
@@ -64,7 +64,7 @@ export default function IOTPage() {
       <ProductSubNav />
 
       {/* Main Content */}
-      <section className="py-24 bg-slate-50 relative">
+      <section className="py-12 md:py-24 bg-slate-50 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {iotItems.map((v, idx) => (
@@ -76,13 +76,13 @@ export default function IOTPage() {
                 transition={{ delay: idx * 0.05 }}
                 className="bg-white rounded-[2.5rem] overflow-hidden shadow-sm border border-slate-100 flex flex-col group hover:shadow-2xl transition-all duration-300"
               >
-                <div className="relative h-64 overflow-hidden bg-slate-100">
+                <div className="relative h-48 md:h-64 overflow-hidden bg-slate-100">
                   <img 
                     src={v.image} 
                     alt={v.title}
                     loading="lazy"
                     decoding="async"
-                    className="w-full h-full object-contain p-8 group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-full object-contain p-4 md:p-8 group-hover:scale-110 transition-transform duration-300"
                     referrerPolicy="no-referrer"
                   />
                   <div className="absolute top-6 left-6">
@@ -106,9 +106,10 @@ export default function IOTPage() {
 
                   <motion.button
                     whileHover={{ x: 5 }}
-                    className="flex items-center gap-2 text-emerald-600 font-bold text-xs uppercase tracking-widest group/btn"
+                    onClick={() => navigate('/contact')}
+                    className="flex items-center gap-2 text-emerald-600 font-bold text-xs uppercase tracking-widest group/btn cursor-pointer"
                   >
-                    View technical specs
+                    Get in touch to know more
                     <ChevronRight className="w-4 h-4" />
                   </motion.button>
                 </div>

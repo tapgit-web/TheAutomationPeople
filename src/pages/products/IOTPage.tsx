@@ -26,9 +26,61 @@ export default function IOTPage() {
       <Helmet>
         <title>Industrial IoT (IIoT) & Smart Gateway Solutions | The Automation People</title>
         <meta name="description" content="Connect your machinery to the cloud with our Industrial IoT (IIoT) gateways, remote monitoring systems, and edge data collection solutions." />
+        <meta property="og:site_name" content="The Automation People" />
         <meta property="og:title" content="Industrial IoT (IIoT) & Smart Gateway Solutions | The Automation People" />
         <meta property="og:description" content="Connect your machinery to the cloud with our Industrial IoT (IIoT) gateways, remote monitoring systems, and edge data collection solutions." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://theautomationpeople.in/products/iot" />
+        <meta property="og:image" content="https://theautomationpeople.in/logo512.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Industrial IoT (IIoT) & Smart Gateway Solutions | The Automation People" />
+        <meta name="twitter:description" content="Connect your machinery to the cloud with our Industrial IoT (IIoT) gateways." />
+        <meta name="twitter:image" content="https://theautomationpeople.in/logo512.png" />
         <link rel="canonical" href="https://theautomationpeople.in/products/iot" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "OfferCatalog",
+                "name": "Industrial IoT Products Catalog",
+                "url": "https://theautomationpeople.in/products/iot",
+                "numberOfItems": 1,
+                "itemListElement": [
+                  {
+                    "@type": "Product",
+                    "name": "DATA NEXUS (INDUSTRIAL IOT SYSTEM)",
+                    "description": "Smart IoT edge gateway connecting plant machines with cloud analytics and real-time alerts.",
+                    "brand": { "@type": "Brand", "name": "The Automation People" }
+                  }
+                ]
+              },
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://theautomationpeople.in/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Products",
+                    "item": "https://theautomationpeople.in/products/iot"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "IoT Products",
+                    "item": "https://theautomationpeople.in/products/iot"
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[35vh] md:min-h-[50vh] flex items-center pt-32 md:pt-48 pb-12 md:pb-16 overflow-hidden">

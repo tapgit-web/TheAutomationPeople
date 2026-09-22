@@ -32,9 +32,60 @@ export default function Contact() {
       <Helmet>
         <title>Contact Us | Get in Touch - The Automation People</title>
         <meta name="description" content="Have questions about our industrial automation, SCADA software, or IoT solutions? Contact The Automation People's engineering team in Madurai today." />
+        <meta property="og:site_name" content="The Automation People" />
         <meta property="og:title" content="Contact Us | Get in Touch - The Automation People" />
         <meta property="og:description" content="Have questions about our industrial automation, SCADA software, or IoT solutions? Contact The Automation People's engineering team in Madurai today." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://theautomationpeople.in/contact" />
+        <meta property="og:image" content="https://theautomationpeople.in/logo512.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Us | Get in Touch - The Automation People" />
+        <meta name="twitter:description" content="Have questions about our industrial automation, SCADA software, or IoT solutions? Contact The Automation People's engineering team in Madurai today." />
+        <meta name="twitter:image" content="https://theautomationpeople.in/logo512.png" />
         <link rel="canonical" href="https://theautomationpeople.in/contact" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "ContactPage",
+                "name": "Contact The Automation People",
+                "url": "https://theautomationpeople.in/contact",
+                "mainEntity": {
+                  "@type": "LocalBusiness",
+                  "name": "The Automation People",
+                  "telephone": "+919944042138",
+                  "email": "reachus@theautomationpeople.in",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "No.9A Sekkadi Street, Narimedu",
+                    "addressLocality": "Madurai",
+                    "addressRegion": "Tamil Nadu",
+                    "postalCode": "625002",
+                    "addressCountry": "IN"
+                  }
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://theautomationpeople.in/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Contact Us",
+                    "item": "https://theautomationpeople.in/contact"
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       {/* Enhanced Technical Background */}
       <div className="absolute inset-0 pointer-events-none select-none overflow-hidden" aria-hidden="true">

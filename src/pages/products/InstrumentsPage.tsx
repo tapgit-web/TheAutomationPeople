@@ -110,9 +110,85 @@ export default function InstrumentsPage() {
       <Helmet>
         <title>Process Instruments & Gauges | The Automation People</title>
         <meta name="description" content="Explore our range of flow meters, pressure transmitters, level indicators, and analytical instruments for precise process manufacturing control." />
+        <meta property="og:site_name" content="The Automation People" />
         <meta property="og:title" content="Process Instruments & Gauges | The Automation People" />
         <meta property="og:description" content="Explore our range of flow meters, pressure transmitters, level indicators, and analytical instruments for precise process manufacturing control." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://theautomationpeople.in/products/instruments" />
+        <meta property="og:image" content="https://theautomationpeople.in/logo512.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Process Instruments & Gauges | The Automation People" />
+        <meta name="twitter:description" content="Explore our range of flow meters, pressure transmitters, level indicators, and analytical instruments." />
+        <meta name="twitter:image" content="https://theautomationpeople.in/logo512.png" />
         <link rel="canonical" href="https://theautomationpeople.in/products/instruments" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "OfferCatalog",
+                "name": "Process Instruments Catalog",
+                "url": "https://theautomationpeople.in/products/instruments",
+                "numberOfItems": 5,
+                "itemListElement": [
+                  {
+                    "@type": "Product",
+                    "name": "Electromagnetic Flow Meter",
+                    "description": "High-accuracy electromagnetic flow meter for liquid volume measurement.",
+                    "brand": { "@type": "Brand", "name": "The Automation People" }
+                  },
+                  {
+                    "@type": "Product",
+                    "name": "Ultrasonic Flow Meter",
+                    "description": "Non-invasive ultrasonic flow meter for clean fluids and industrial fluids.",
+                    "brand": { "@type": "Brand", "name": "The Automation People" }
+                  },
+                  {
+                    "@type": "Product",
+                    "name": "Gas Detector (Portable / Online)",
+                    "description": "Single and multi-gas detection solutions for safety and plant monitoring.",
+                    "brand": { "@type": "Brand", "name": "The Automation People" }
+                  },
+                  {
+                    "@type": "Product",
+                    "name": "Level Instruments",
+                    "description": "Continuous and point level transmitters for industrial tanks and vessels.",
+                    "brand": { "@type": "Brand", "name": "The Automation People" }
+                  },
+                  {
+                    "@type": "Product",
+                    "name": "Pressure Instruments & Gauges",
+                    "description": "High-precision pressure transmitters, switches, and gauges for process control.",
+                    "brand": { "@type": "Brand", "name": "The Automation People" }
+                  }
+                ]
+              },
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://theautomationpeople.in/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Products",
+                    "item": "https://theautomationpeople.in/products/instruments"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Instruments",
+                    "item": "https://theautomationpeople.in/products/instruments"
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[35vh] md:min-h-[50vh] flex items-center pt-32 md:pt-48 pb-12 md:pb-16 overflow-hidden">

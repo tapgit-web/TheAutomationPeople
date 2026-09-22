@@ -90,9 +90,85 @@ export default function ValvesPage() {
       <Helmet>
         <title>Control Valves & Actuators | The Automation People</title>
         <meta name="description" content="High-performance industrial control valves, actuators, and flow control systems. Built for precise regulation of liquids, steam, and gases." />
+        <meta property="og:site_name" content="The Automation People" />
         <meta property="og:title" content="Control Valves & Actuators | The Automation People" />
         <meta property="og:description" content="High-performance industrial control valves, actuators, and flow control systems. Built for precise regulation of liquids, steam, and gases." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://theautomationpeople.in/products/valves" />
+        <meta property="og:image" content="https://theautomationpeople.in/logo512.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Control Valves & Actuators | The Automation People" />
+        <meta name="twitter:description" content="High-performance industrial control valves, actuators, and flow control systems." />
+        <meta name="twitter:image" content="https://theautomationpeople.in/logo512.png" />
         <link rel="canonical" href="https://theautomationpeople.in/products/valves" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "OfferCatalog",
+                "name": "Industrial Control Valves Catalog",
+                "url": "https://theautomationpeople.in/products/valves",
+                "numberOfItems": 5,
+                "itemListElement": [
+                  {
+                    "@type": "Product",
+                    "name": "3-way L-port Ball Valve",
+                    "description": "3-way L-port ball valve with pneumatic actuator for flow diversion, mixing, and shutoff.",
+                    "brand": { "@type": "Brand", "name": "The Automation People" }
+                  },
+                  {
+                    "@type": "Product",
+                    "name": "Bin Discharge Combo & Fine Valve",
+                    "description": "Designed for controlled and continuous flow of powder and bulk materials.",
+                    "brand": { "@type": "Brand", "name": "The Automation People" }
+                  },
+                  {
+                    "@type": "Product",
+                    "name": "Knife Gate Valve",
+                    "description": "Ideal for pulp, paper, mining, wastewater treatment, and slurry handling.",
+                    "brand": { "@type": "Brand", "name": "The Automation People" }
+                  },
+                  {
+                    "@type": "Product",
+                    "name": "Pneumatic Operated Ball Valve",
+                    "description": "High durability pneumatic ball valve for fast-acting flow control.",
+                    "brand": { "@type": "Brand", "name": "The Automation People" }
+                  },
+                  {
+                    "@type": "Product",
+                    "name": "Sanitary Ball Valve",
+                    "description": "High polished sanitary ball valve for food and pharmaceutical applications.",
+                    "brand": { "@type": "Brand", "name": "The Automation People" }
+                  }
+                ]
+              },
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://theautomationpeople.in/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Products",
+                    "item": "https://theautomationpeople.in/products/valves"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Valves",
+                    "item": "https://theautomationpeople.in/products/valves"
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[35vh] md:min-h-[50vh] flex items-center pt-32 md:pt-48 pb-12 md:pb-16 overflow-hidden">

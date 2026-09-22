@@ -51,9 +51,73 @@ export default function SensorsPage() {
       <Helmet>
         <title>Industrial Sensors & Transmitters | The Automation People</title>
         <meta name="description" content="Browse our high-accuracy sensors and transmitters for temperature, pressure, level, and proximity control. Engineered for reliability in tough conditions." />
+        <meta property="og:site_name" content="The Automation People" />
         <meta property="og:title" content="Industrial Sensors & Transmitters | The Automation People" />
         <meta property="og:description" content="Browse our high-accuracy sensors and transmitters for temperature, pressure, level, and proximity control. Engineered for reliability in tough conditions." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://theautomationpeople.in/products/sensors" />
+        <meta property="og:image" content="https://theautomationpeople.in/logo512.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Industrial Sensors & Transmitters | The Automation People" />
+        <meta name="twitter:description" content="Browse our high-accuracy sensors and transmitters for temperature, pressure, level, and proximity control." />
+        <meta name="twitter:image" content="https://theautomationpeople.in/logo512.png" />
         <link rel="canonical" href="https://theautomationpeople.in/products/sensors" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "OfferCatalog",
+                "name": "Industrial Sensors Catalog",
+                "url": "https://theautomationpeople.in/products/sensors",
+                "numberOfItems": 2,
+                "itemListElement": [
+                  {
+                    "@type": "Product",
+                    "name": "Condition Monitoring System / Vibration Sensor",
+                    "description": "High-precision vibration sensor for robust condition monitoring in industrial equipment.",
+                    "brand": {
+                      "@type": "Brand",
+                      "name": "The Automation People"
+                    }
+                  },
+                  {
+                    "@type": "Product",
+                    "name": "Temperature Sensors",
+                    "description": "Reliable RTD Pt100 and thermocouple temperature measurement for industrial process control.",
+                    "brand": {
+                      "@type": "Brand",
+                      "name": "The Automation People"
+                    }
+                  }
+                ]
+              },
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://theautomationpeople.in/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Products",
+                    "item": "https://theautomationpeople.in/products/sensors"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Sensors",
+                    "item": "https://theautomationpeople.in/products/sensors"
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[35vh] md:min-h-[50vh] flex items-center pt-32 md:pt-48 pb-12 md:pb-16 overflow-hidden">

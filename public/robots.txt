@@ -2,4 +2,41 @@
 User-agent: *
 Allow: /
 
+# Explicit AI Search Engine & LLM Crawler Permissions
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Sitemap & LLMs Text standard files
 Sitemap: https://theautomationpeople.in/sitemap.xml
+LLMs-Text: https://theautomationpeople.in/llms.txt
+

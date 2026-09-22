@@ -74,9 +74,53 @@ export default function ServicesPage() {
       <Helmet>
         <title>Industrial Automation & Engineering Services | The Automation People</title>
         <meta name="description" content="Discover our engineering services, including PLC programming, control panel fabrication, SCADA systems, custom PCB design, and smart industrial IoT integrations." />
+        <meta property="og:site_name" content="The Automation People" />
         <meta property="og:title" content="Industrial Automation & Engineering Services | The Automation People" />
         <meta property="og:description" content="Discover our engineering services, including PLC programming, control panel fabrication, SCADA systems, custom PCB design, and smart industrial IoT integrations." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://theautomationpeople.in/services" />
+        <meta property="og:image" content="https://theautomationpeople.in/logo512.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Industrial Automation & Engineering Services | The Automation People" />
+        <meta name="twitter:description" content="Discover our engineering services, including PLC programming, custom control panels, SCADA software, and smart IoT integrations." />
+        <meta name="twitter:image" content="https://theautomationpeople.in/logo512.png" />
         <link rel="canonical" href="https://theautomationpeople.in/services" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Service",
+                "name": "Industrial Automation & Engineering Services",
+                "provider": {
+                  "@type": "LocalBusiness",
+                  "name": "The Automation People",
+                  "url": "https://theautomationpeople.in/"
+                },
+                "serviceType": "Industrial Automation, PLC Programming, Control Panels & SCADA",
+                "areaServed": "India",
+                "description": "Comprehensive industrial automation engineering including PLC programming, servo motion control, control panel fabrication, custom PCB design, and smart IoT factory integrations."
+              },
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://theautomationpeople.in/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Services",
+                    "item": "https://theautomationpeople.in/services"
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center justify-center pt-32 pb-20 overflow-hidden border-b border-slate-200">

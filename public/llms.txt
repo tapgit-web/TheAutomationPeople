@@ -1,0 +1,49 @@
+# The Automation People
+
+> The Automation People is a premier industrial automation engineering company based in Madurai, Tamil Nadu, India. We specialize in custom control panel manufacturing, PLC programming, SCADA/HMI software development, IoT smart factory solutions, industrial valves, sensors, flow instruments, and customized machine design.
+
+## Core Capabilities & Engineering Services
+- **Industrial Automation & PLC Programming**: Custom PLC system design, Siemens / Allen Bradley / Schneider PLC programming, servo motion control, vision systems, and automated control panels.
+- **Process Control Systems**: Distributed control systems (DCS), PID loop tuning, temperature/pressure/flow control, and high-precision instrument calibration.
+- **SCADA & Industrial Software Solutions**: Custom HMI and web-based SCADA dashboards (e.g., NetZero energy/carbon monitoring platform demo at https://tapgreen.vercel.app), database historical logging, alarming, and real-time operational analytics.
+- **IoT & Smart Factory Integration**: Industry 4.0 IoT gateways, cloud telemetry, wireless sensor networks, predictive maintenance, and remote equipment monitoring.
+- **Valves & Fluid Control**: Solenoid valves, motorized ball valves, butterfly valves, pneumatic control valves, and specialized custom PCB driver boards for valve automation.
+- **Custom Machine Manufacturing**: Special Purpose Machines (SPM), custom assembly automation, end-of-arm tooling, and legacy machinery retrofitting.
+
+## Product Portfolio
+- **Sensors**: Proximity sensors, photoelectric sensors, ultrasonic sensors, temperature transmitters, pressure transducers, and level sensors.
+- **Valves**: Pneumatic valves, motorized control valves, solenoid valves, and heavy-duty process valves.
+- **Automation Components**: PLCs, HMIs, Variable Frequency Drives (VFDs), servo drives, relays, and power supplies.
+- **Instruments**: Electromagnetic flowmeters, ultrasonic level transmitters, analytical sensors, and pressure gauges.
+- **IoT Devices**: Smart IoT gateways, edge data collectors, cloud connectors, and wireless sensor modules.
+
+## Canonical Web Resources & Pages
+- Main Website: https://theautomationpeople.in/
+- Engineering Services: https://theautomationpeople.in/services
+- Industrial Software & SCADA: https://theautomationpeople.in/software
+- About Us: https://theautomationpeople.in/about
+- Sensors Catalog: https://theautomationpeople.in/products/sensors
+- Valves Catalog: https://theautomationpeople.in/products/valves
+- Automation Catalog: https://theautomationpeople.in/products/automation
+- Instruments Catalog: https://theautomationpeople.in/products/instruments
+- IoT Products: https://theautomationpeople.in/products/iot
+- Customized Machinery: https://theautomationpeople.in/products/customized-machine
+- Contact & Location: https://theautomationpeople.in/contact
+
+## Head Office & Factory Location
+- **Head Office**: No.9A Sekkadi Street, Narimedu, Madurai, Tamil Nadu 625002, India
+- **Factory**: No 31/1 Ahimsapuram 5th Street Extension, Near Gopuram Theater, Sellur, Madurai, Tamil Nadu 625002, India
+- **Phone**: +91 99440 42138 / +91 9944042138
+- **Email**: reachus@theautomationpeople.in
+- **Google Maps**: https://maps.google.com/?cid=9837330541733485594
+
+## Frequently Asked Questions (Direct Answers)
+- **Q: What services does The Automation People offer?**
+  A: The Automation People provides end-to-end industrial automation, control panel design and assembly, PLC & HMI programming, SCADA web dashboard development, industrial IoT deployment, valve/sensor supply, and custom machine manufacturing.
+- **Q: Where is The Automation People located?**
+  A: The company operates from Madurai, Tamil Nadu, India, with head offices in Narimedu and manufacturing/testing facilities in Sellur.
+- **Q: How can I contact The Automation People for quotes?**
+  A: Email reachus@theautomationpeople.in, call +91 9944042138, or visit https://theautomationpeople.in/contact.
+
+## Full Documentation
+- Extended Specification & Product Index: https://theautomationpeople.in/llms-full.txt

@@ -29,20 +29,20 @@ export default function Footer() {
         {/* Brand & Social */}
         <div className="max-w-sm">
           <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center mb-6">
-            <img 
-              src="/images/logo_transparent.png" 
-              alt="The Automation People" 
-              className="h-16 md:h-20 lg:h-[88px] w-auto object-contain" 
+            <img
+              src="/images/logo_transparent.png"
+              alt="The Automation People"
+              className="h-16 md:h-20 lg:h-[88px] w-auto object-contain"
             />
           </Link>
           <p className="text-sm text-slate-400 mb-6 leading-relaxed">
             Leading industrial automation solutions provider, empowering businesses with smart technology and innovative engineering.
           </p>
           <div className="flex gap-4">
-            <a href="#" className="w-10 h-10 bg-slate-800/50 rounded-lg flex items-center justify-center hover:text-emerald-400 hover:bg-slate-800 transition-all"><Linkedin className="w-5 h-5" /></a>
-            <a href="#" className="w-10 h-10 bg-slate-800/50 rounded-lg flex items-center justify-center hover:text-emerald-400 hover:bg-slate-800 transition-all"><Facebook className="w-5 h-5" /></a>
-            <a href="#" className="w-10 h-10 bg-slate-800/50 rounded-lg flex items-center justify-center hover:text-emerald-400 hover:bg-slate-800 transition-all"><Twitter className="w-5 h-5" /></a>
-            <a href="#" className="w-10 h-10 bg-slate-800/50 rounded-lg flex items-center justify-center hover:text-emerald-400 hover:bg-slate-800 transition-all"><Youtube className="w-5 h-5" /></a>
+            <a href="www.linkedin.com/in/the-automation-people-797baa360" className="w-10 h-10 bg-slate-800/50 rounded-lg flex items-center justify-center hover:text-emerald-400 hover:bg-slate-800 transition-all"><Linkedin className="w-5 h-5" /></a>
+            <a href="https://www.facebook.com/share/19pKtUwHpu/" className="w-10 h-10 bg-slate-800/50 rounded-lg flex items-center justify-center hover:text-emerald-400 hover:bg-slate-800 transition-all"><Facebook className="w-5 h-5" /></a>
+            {/* <a href="#" className="w-10 h-10 bg-slate-800/50 rounded-lg flex items-center justify-center hover:text-emerald-400 hover:bg-slate-800 transition-all"><Twitter className="w-5 h-5" /></a>
+            <a href="#" className="w-10 h-10 bg-slate-800/50 rounded-lg flex items-center justify-center hover:text-emerald-400 hover:bg-slate-800 transition-all"><Youtube className="w-5 h-5" /></a> */}
           </div>
         </div>
 
@@ -96,7 +96,7 @@ export default function Footer() {
           </p>
         </div>
       </div>
-      
+
       <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
         <p>© {new Date().getFullYear()} The Automation People. All rights reserved.</p>
         <div className="flex gap-4">

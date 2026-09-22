@@ -51,9 +51,54 @@ export default function SoftwarePage() {
       <Helmet>
         <title>Industrial Software & SCADA Solutions | The Automation People</title>
         <meta name="description" content="Optimize your production with our advanced industrial software, PLC programming, custom SCADA/HMI dashboards, and real-time data monitoring solutions." />
+        <meta property="og:site_name" content="The Automation People" />
         <meta property="og:title" content="Industrial Software & SCADA Solutions | The Automation People" />
         <meta property="og:description" content="Optimize your production with our advanced industrial software, PLC programming, custom SCADA/HMI dashboards, and real-time data monitoring solutions." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://theautomationpeople.in/software" />
+        <meta property="og:image" content="https://theautomationpeople.in/logo512.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Industrial Software & SCADA Solutions | The Automation People" />
+        <meta name="twitter:description" content="Optimize your production with our advanced industrial software, PLC programming, custom SCADA/HMI dashboards, and real-time data monitoring solutions." />
+        <meta name="twitter:image" content="https://theautomationpeople.in/logo512.png" />
         <link rel="canonical" href="https://theautomationpeople.in/software" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "SoftwareApplication",
+                "name": "NetZero Industrial SCADA & Energy Monitoring Platform",
+                "operatingSystem": "Web-based",
+                "applicationCategory": "BusinessApplication",
+                "url": "https://tapgreen.vercel.app/",
+                "author": {
+                  "@type": "Organization",
+                  "name": "The Automation People",
+                  "url": "https://theautomationpeople.in/"
+                },
+                "description": "Enterprise-grade web SCADA and IoT telemetry solution for industrial energy tracking, carbon management, and automated floor analytics."
+              },
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://theautomationpeople.in/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Software Solutions",
+                    "item": "https://theautomationpeople.in/software"
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[50vh] flex items-center pt-32 pb-16 overflow-hidden">

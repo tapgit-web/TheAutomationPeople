@@ -56,9 +56,51 @@ export default function AboutPage() {
       <Helmet>
         <title>About Us | Industrial Automation Experts - The Automation People</title>
         <meta name="description" content="Learn about The Automation People, our mission, precision engineering expertise, and our range of custom PCB designs, PLC systems, and smart IoT solutions." />
+        <meta property="og:site_name" content="The Automation People" />
         <meta property="og:title" content="About Us | Industrial Automation Experts - The Automation People" />
         <meta property="og:description" content="Learn about The Automation People, our mission, precision engineering expertise, and our range of custom PCB designs, PLC systems, and smart IoT solutions." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://theautomationpeople.in/about" />
+        <meta property="og:image" content="https://theautomationpeople.in/logo512.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Us | Industrial Automation Experts - The Automation People" />
+        <meta name="twitter:description" content="Learn about The Automation People, our mission, precision engineering expertise, and our range of custom PCB designs, PLC systems, and smart IoT solutions." />
+        <meta name="twitter:image" content="https://theautomationpeople.in/logo512.png" />
         <link rel="canonical" href="https://theautomationpeople.in/about" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "AboutPage",
+                "name": "About The Automation People",
+                "url": "https://theautomationpeople.in/about",
+                "mainEntity": {
+                  "@type": "Organization",
+                  "name": "The Automation People",
+                  "description": "Industrial engineering firm based in Madurai specializing in control panels, PLCs, SCADA dashboards, IoT integration, and special purpose machinery."
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://theautomationpeople.in/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "About Us",
+                    "item": "https://theautomationpeople.in/about"
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center pt-48 pb-16 overflow-hidden">

@@ -43,9 +43,67 @@ export default function AutomationProductsPage() {
       <Helmet>
         <title>PLC, SCADA & Automation Products | The Automation People</title>
         <meta name="description" content="Get top-tier PLCs, HMIs, VFDs, and smart control panels. Standard and custom automation hardware designed for seamless industrial integration." />
+        <meta property="og:site_name" content="The Automation People" />
         <meta property="og:title" content="PLC, SCADA & Automation Products | The Automation People" />
         <meta property="og:description" content="Get top-tier PLCs, HMIs, VFDs, and smart control panels. Standard and custom automation hardware designed for seamless industrial integration." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://theautomationpeople.in/products/automation" />
+        <meta property="og:image" content="https://theautomationpeople.in/logo512.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="PLC, SCADA & Automation Products | The Automation People" />
+        <meta name="twitter:description" content="Get top-tier PLCs, HMIs, VFDs, and smart control panels." />
+        <meta name="twitter:image" content="https://theautomationpeople.in/logo512.png" />
         <link rel="canonical" href="https://theautomationpeople.in/products/automation" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "OfferCatalog",
+                "name": "Industrial Automation Products Catalog",
+                "url": "https://theautomationpeople.in/products/automation",
+                "numberOfItems": 2,
+                "itemListElement": [
+                  {
+                    "@type": "Product",
+                    "name": "Single Actuators Test Rig Panel",
+                    "description": "Custom pneumatic/hydraulic single actuator testing and calibration panel.",
+                    "brand": { "@type": "Brand", "name": "The Automation People" }
+                  },
+                  {
+                    "@type": "Product",
+                    "name": "Four Actuators Endurance Test Rig",
+                    "description": "Multi-station actuator endurance and lifecycle testing control panel.",
+                    "brand": { "@type": "Brand", "name": "The Automation People" }
+                  }
+                ]
+              },
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://theautomationpeople.in/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Products",
+                    "item": "https://theautomationpeople.in/products/automation"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Automation",
+                    "item": "https://theautomationpeople.in/products/automation"
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[35vh] md:min-h-[50vh] flex items-center pt-32 md:pt-48 pb-12 md:pb-16 overflow-hidden">

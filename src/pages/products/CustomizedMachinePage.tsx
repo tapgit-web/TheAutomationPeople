@@ -27,7 +27,58 @@ export default function CustomizedMachinePage() {
       <Helmet>
         <title>Customized Machines & Special Purpose Machines | The Automation People</title>
         <meta name="description" content="Explore our bespoke automated machines, Special Purpose Machines (SPMs), and custom manufacturing solutions tailored to your unique production needs." />
+        <meta property="og:site_name" content="The Automation People" />
+        <meta property="og:title" content="Customized Machines & Special Purpose Machines | The Automation People" />
+        <meta property="og:description" content="Explore our bespoke automated machines, Special Purpose Machines (SPMs), and custom manufacturing solutions tailored to your unique production needs." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://theautomationpeople.in/products/customized-machine" />
+        <meta property="og:image" content="https://theautomationpeople.in/logo512.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Customized Machines & Special Purpose Machines | The Automation People" />
+        <meta name="twitter:description" content="Explore our bespoke automated machines and Special Purpose Machines (SPMs)." />
+        <meta name="twitter:image" content="https://theautomationpeople.in/logo512.png" />
         <link rel="canonical" href="https://theautomationpeople.in/products/customized-machine" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Service",
+                "name": "Custom Special Purpose Machine (SPM) Manufacturing",
+                "provider": {
+                  "@type": "LocalBusiness",
+                  "name": "The Automation People",
+                  "url": "https://theautomationpeople.in/"
+                },
+                "serviceType": "Special Purpose Machines (SPM), Custom Assembly Equipment & Robotic Integration",
+                "description": "Custom engineering, design, and manufacturing of Special Purpose Machines (SPM), robotic tooling, and custom production assembly lines."
+              },
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://theautomationpeople.in/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Products",
+                    "item": "https://theautomationpeople.in/products/customized-machine"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Customized Machines",
+                    "item": "https://theautomationpeople.in/products/customized-machine"
+                  }
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       {/* Hero Section */}
       <section className="relative min-h-[35vh] md:min-h-[50vh] flex items-center pt-32 md:pt-48 pb-12 md:pb-16 overflow-hidden">

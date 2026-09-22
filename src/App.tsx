@@ -10,9 +10,11 @@ import ScrollToTop from './components/ScrollToTop';
 import Header from './components/layout/Header';
 import Hero from './components/sections/Hero';
 import Footer from './components/layout/Footer';
+import WhatsAppButton from './components/layout/WhatsAppButton';
 
 const Services = lazy(() => import('./components/sections/Services'));
 const Partners = lazy(() => import('./components/sections/Partners'));
+const AEOFAQSection = lazy(() => import('./components/sections/AEOFAQSection'));
 const Contact = lazy(() => import('./components/sections/Contact'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage'));
 const SoftwarePage = lazy(() => import('./pages/SoftwarePage'));
@@ -29,6 +31,7 @@ const HomePage = () => (
     <Hero />
     <Services />
     <Partners />
+    <AEOFAQSection />
   </>
 );
 
@@ -39,11 +42,22 @@ export default function App() {
       <div className="min-h-screen bg-white">
         <Helmet>
           <title>The Automation People | Smart Industrial Solutions</title>
-          <meta name="description" content="The Automation People provides advanced industrial automation, process control, valves, sensors, and IoT solutions to optimize your manufacturing and business operations." />
+          <meta name="description" content="The Automation People provides advanced industrial automation, process control, valves, sensors, SCADA software, and IoT solutions to optimize your manufacturing and business operations." />
           <meta name="keywords" content="Industrial Automation, Process Control, IoT, Manufacturing efficiency, Valves, Sensors, Flow Instruments, Analytical Instruments, SCADA, PLC, Smart Control Solutions, Madurai, Automation experts" />
+          <meta name="geo.region" content="IN-TN" />
+          <meta name="geo.placename" content="Madurai, Tamil Nadu, India" />
+          <meta name="geo.position" content="9.937879;78.127016" />
+          <meta name="ICBM" content="9.937879, 78.127016" />
+          <meta property="og:site_name" content="The Automation People" />
           <meta property="og:title" content="The Automation People | Smart Industrial Solutions" />
           <meta property="og:description" content="Optimizing industrial operations with smart automation and IoT solutions." />
           <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://theautomationpeople.in/" />
+          <meta property="og:image" content="https://theautomationpeople.in/logo512.png" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="The Automation People | Smart Industrial Solutions" />
+          <meta name="twitter:description" content="Optimizing industrial operations with smart automation and IoT solutions." />
+          <meta name="twitter:image" content="https://theautomationpeople.in/logo512.png" />
           <link rel="canonical" href="https://theautomationpeople.in/" />
         </Helmet>
 
@@ -72,6 +86,7 @@ export default function App() {
         </main>
 
         <Footer />
+        <WhatsAppButton />
       </div>
     </Router>
   );
